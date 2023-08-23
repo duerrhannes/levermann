@@ -8,7 +8,8 @@ The original Levermann strategy includes (up to) 13 criteria. Each criterion sco
 The portfolio size usually recommended for this strategy is 10 to 15 shares.
 
 The list of criteria and the number of points awarded may vary slightly depending on whether the shares are from large, medium or small companies (large caps, mid caps or small caps). A distinction is also made between shares from the financial sector and other business areas.
-In the model I used, this differenciation of market cap and business sector was omitted, due to avoiding an overly complex model (after all, any model is just as good as the data fed into it are...).
+The strategy on the blog of Petra Wolff (https://petrawolff.blog/experiment-levermann-depot) follows this approach. For more information on the Levermann strategy and an "experiment" with a real depot, check out her website, https://petrawolff.blog. 
+In the model I used, this differenciation of market cap and business sector was omitted, for the sake of avoiding an overly complex model (after all, any model is just as good as the data fed into it are...).
 
 The criteria list
 The 13 individual criteria and their evaluation logic are listed here.
