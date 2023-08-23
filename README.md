@@ -1,7 +1,12 @@
 levermann
 ==============================
+Naming Convention for python script "1.0-jqp-initial-data-exploration"
 
-A short python-script for fundamental analysis of stocks using the method and KPIs of Susann Levermann. Changes to the strategy were made following the adaptions of Petra Wolff. Financials data is scraped from Yahoo Finance.
+A short python script for quantitative stock analysis using the valuaion method developed by Susann Levermann. 
+Changes to the strategy were made following the adaptions of Petra Wolff. Financials data is scraped from Yahoo Finance.
+
+
+
 
 Project Organization
 ------------
