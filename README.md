@@ -7,6 +7,6 @@ The data for the financials is fetched from Yahoo Finance, mainly using the pyth
 - A manual on how to use the tool can be found in references -> [getting started](docs/getting-started.rst)
 - Need some background on the strategy? Check the document on the [Strategy](references/Strategy)
 
-![Animation](https://github.com/duerrhannes/levermann/src/visualization/Animation.gif)
+![Animation](src/visualization/Animation.gif)
 
 Disclaimer: this tool is for information purposes only. It is not intended to be used for making investment decisions!
