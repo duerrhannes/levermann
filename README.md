@@ -11,7 +11,7 @@ The data for the financials is fetched from Yahoo Finance, mainly using the pyth
 
 - Jupyter notebook is located [here](notebooks/1.0-levermann-analysis.ipynb)
 - A manual on how to use the tool can be found in references -> [getting started](docs/getting-started.md)
-- A short analysis of the results and interpretation guide is in this [Analysis of the results](reports/analysis.md)
+- An interpretation guide can be found in this [analysis of the results](reports/analysis.md)
 - Sample output can be found in this excel file under [reports](reports/Results_as of_2023-08-28.xlsx) as well as [result plots](reports/figures)
 - Need some background on the strategy? A brief overview can be found in [Strategy](docs/strategy.md) (or check the above mentioned links)
 
