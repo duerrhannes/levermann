@@ -9,13 +9,14 @@ This little python script can be used to automate your stock analysis process. I
 The data for the financials is fetched from Yahoo Finance, mainly using the python modules `yahooquery` and `yfinance`.
 
 
-- A manual on how to use the tool can be found in references -> [getting started](docs/getting-started.rst)
-- Need some background on the strategy? A brief overview can be found in [Strategy](docs/strategy.md) (or check the above mentioned links)
-- Sample output can be found in this excel file under [reports](reports/Results_as of_2023-08-28.xlsx) as well as [result plots](reports/figures)
+- Jupyter notebook is located [here](notebooks/1.0-levermann-analysis.ipynb)
+- A manual on how to use the tool can be found in references -> [getting started](docs/getting-started.md)
 - A short analysis of the results and interpretation guide is in this [Analysis of the results](reports/analysis.md)
+- Sample output can be found in this excel file under [reports](reports/Results_as of_2023-08-28.xlsx) as well as [result plots](reports/figures)
+- Need some background on the strategy? A brief overview can be found in [Strategy](docs/strategy.md) (or check the above mentioned links)
 
 
-Results are avaiable in 
+Running the notebook generates an Excel-file with a summary of the total scores as well as separate sheets for metrics. The result plots shown here will also be created.
 ![Notebook](docs/Animation.gif)
 
 
