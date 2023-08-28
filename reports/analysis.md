@@ -34,7 +34,6 @@ Let's rank all stocks by points:
 ![Barchart_complete](reports/figures/2023-08-28_09-48-57_bar_pitayasmoothie-light.png)
 
 That's a pretty crowded chart. If we filter only the stocks with +6 or +7 points, that's still 24 stocks left. As a criterion to order the group of the top-scoring stocks, we could take into account how expensive a share is. After all, it's a no-brainer that buying stocks a price too high is one of the most important performance-killers. Ranking the stocks primarily by points achieved and secondarily by the price-earnings ratio (PE ratio), results in this table:
-
 ![Top-ranking stocks](reports/figures/2023-08-28_09-48-57_top-stocks_bar_pitayasmoothie-light.png)
 
 
