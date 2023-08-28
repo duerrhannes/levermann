@@ -1,6 +1,6 @@
 # This document provides an overview and sample interpretation of project results
 
-N.B: The output plots are automaticalle generated when running the script using 'matplotlib' and can be customized with matplotlib styles. 
+N.B: The output plots are automatically generated when running the script using 'matplotlib' and can be customized with matplotlib styles. 
 
 ![Overview](./figures/2023-08-28_09-48-57_summary_pitayasmoothie-light.png)
 
@@ -11,7 +11,7 @@ The dataset comprises financial data of S&P 500 stocks (for the list of companie
 430 stocks out of the S&P 500 have complete data. In total, if stocks with one or more missing data entries are also taken into account, about 99% of all entries was successfully scraped.
 
 
-## Points achieved
+## Total scores
 
 Some stocks scored +6 or +7, with some stocks also having negative points in the same magintude. Determining a good score depends on various factors.
 Some stocks achieved a total score of 6 or 7, but there were also stocks with the same amount of negative points. Based on a set of 13 criteria, is +6 oder +7 a good score? And at which level should you set your bar for buying/selling? That question's a difficult one to answer, as it depends on various factors. 
@@ -37,7 +37,7 @@ That's a pretty crowded chart. If we filter only the stocks with +6 or +7 points
 ![Top-ranking stocks](./figures/2023-08-28_09-48-57_top-stocks_bar_pitayasmoothie-light.png)
 
 
-## How well do/did the stocks perform?
+## How did the stocks perform?
 
 Having identified potential buy-candidates, you might ask yourself wheter you'd expect any significant outperformance of these stocks. After all, why bother to go through all this work, if you'd be better of in simply buying you SPY etf?
 When we go back to the first figure and have a closer look on the line plot (bottom left), you can notice the 5 stocks with the highest scores (solid lines) outperformed the S&P 500 benchmark index, whereas the 5 stocks with the lowest scores (dashed lines) clearly underperformed. 
