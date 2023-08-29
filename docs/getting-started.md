@@ -1,4 +1,4 @@
-# GitHub Project User Manual
+# Levermann Tool User Manual
 This manual aims to assist you in conducting your own analyses using the provided script.
 
 #  Prerequisites
