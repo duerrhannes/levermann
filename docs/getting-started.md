@@ -17,7 +17,8 @@ You can find a sample Excel file pre-filled with S&P 500 stocks, as well as a pr
 
 ## Defining Parameters
 Adjust the script to your preferences using the variables in the second cell of the Jupyter notebook.
-`# Wartezeit zwischen einzelnen Anfragen an den Yahoo! Server (Erhöhung kann ggfs. zur Reduzierung von Fehlern beitragen)
+```
+# Wartezeit zwischen einzelnen Anfragen an den Yahoo! Server (Erhöhung kann ggfs. zur Reduzierung von Fehlern beitragen)
 seconds_sleep = 0.0
 
 # Benchmarkindex für die Liniendiagramme festlegen
@@ -27,7 +28,8 @@ benchmark_index = {"^gspc": "S&P 500"}
 # Definiere Styles für die Matplotlib-Plots
 list_styles = ["fivethirtyeight",
                "seaborn-v0_8-white"
-               ]`
+               ]
+```
 - seconds_sleep: Time between requests to Yahoo! servers. Increasing this might reduce errors.
 - benchmark_index: Dictionary for resulting line plots. Stock valuation still requires a benchmark index in the input Excel file.
 - list_styles: Specify one or more Matplotlib styles for plotting. Styles should be locally available or accessible online.
