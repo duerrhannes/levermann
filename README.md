@@ -1,7 +1,7 @@
 Levermann tool - quantitative stock analysis
 ==============================
 
-![Overview](reports/figures/2023-08-28_09-48-57_summary_pitayasmoothie-light.png)
+![Overview](reports/figures/2023-08-28_09-48-57_summary.png)
 
 
 
@@ -10,14 +10,14 @@ The data for the financials is fetched from Yahoo Finance, mainly using the pyth
 
 
 - Jupyter notebook is located [here](notebooks/1.0-levermann-analysis.ipynb)
-- A manual on how to use the tool can be found in references -> [getting started](docs/getting-started.md)
+- Need help with using the notebook? Have a look at [getting started](docs/getting-started.md)
 - An interpretation guide can be found in this [analysis of the results](reports/analysis.md)
-- Sample output can be found in this excel file under [reports](reports/Results_as of_2023-08-28.xlsx) as well as [result plots](reports/figures)
+- Sample output can be found in this excel file under [reports](reports) as well as [result plots](reports/figures)
 - Need some background on the strategy? A brief overview can be found in [Strategy](docs/strategy.md) (or check the above mentioned links)
 
 
 Running the notebook generates an Excel-file with a summary of the total scores as well as separate sheets for metrics. The result plots shown here will also be created.
-![Notebook](docs/Animation.gif)
+![Notebook](docs/animation.gif)
 
 
 Disclaimer: this tool is for information purposes only. It is not intended to be used for actual trading or making investment decisions!

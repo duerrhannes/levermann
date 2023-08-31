@@ -8,7 +8,7 @@ The required package list is available in the [requirements.txt](./requirements.
 Input Data
 The script reads data from an Excel file that must have 4 columns essential for the analysis:
 
-![Input data](docs/levermann_example_watchlist.jpg)
+![input data](docs/levermann_example_watchlist.jpg)
 - Asset name
 - Yahoo! Finance Ticker Symbol
 - Corresponding customizable Benchmark index
@@ -17,6 +17,17 @@ You can find a sample Excel file pre-filled with S&P 500 stocks, as well as a pr
 
 ## Defining Parameters
 Adjust the script to your preferences using the variables in the second cell of the Jupyter notebook.
+`# Wartezeit zwischen einzelnen Anfragen an den Yahoo! Server (Erhöhung kann ggfs. zur Reduzierung von Fehlern beitragen)
+seconds_sleep = 0.0
+
+# Benchmarkindex für die Liniendiagramme festlegen
+# Yahoo Ticker Symbol verwenden, z.B: ^gdaxi für DAX, ^gspc für S&P 500 usw.
+benchmark_index = {"^gspc": "S&P 500"}
+
+# Definiere Styles für die Matplotlib-Plots
+list_styles = ["fivethirtyeight",
+               "seaborn-v0_8-white"
+               ]`
 - seconds_sleep: Time between requests to Yahoo! servers. Increasing this might reduce errors.
 - benchmark_index: Dictionary for resulting line plots. Stock valuation still requires a benchmark index in the input Excel file.
 - list_styles: Specify one or more Matplotlib styles for plotting. Styles should be locally available or accessible online.
@@ -25,8 +36,12 @@ Adjust the script to your preferences using the variables in the second cell of 
 Starting the script presents a GUI prompt to select the input data Excel file. The output files are created in the same directory with a timestamp prefix. 
 Output includes an Excel file with analysis results. It contains a summary sheet, total score, PE ratio, and recommended max stock price. Additional rows use predicted earnings for current year to set a price limit.
 The Excel file has sheets for calculation details of each of the 13 criteria. For criterion overview, refer to the [strategy document](docs/strategy.md).
-Depending on defined Matplotlib styles, PNG format result plots may be generated. 
-A set includes a summary graphic with all 4 other plots and 4 detail plots:
+
+![sample output file](docs/animation.gif)
+
+Depending on defined Matplotlib styles, sets of result plots in PNG format may be generated. 
+One set includes a summary graphic and 4 other detail plots:
+- Summary containing below listed 4 plots.
 - Bar chart ranking stocks from highest to lowest scores.
 - Scatter plot showing correlation between 6-month share performance and total score.
 - Line plot of share price development over 6 months with benchmark index comparison.
