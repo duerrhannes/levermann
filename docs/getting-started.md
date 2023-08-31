@@ -8,7 +8,7 @@ The required package list is available in the [requirements.txt](./requirements.
 Input Data
 The script reads data from an Excel file that must have 4 columns essential for the analysis:
 
-![input data](docs/levermann_example_watchlist.jpg)
+![input data](./levermann_example_watchlist.jpg)
 - Asset name
 - Yahoo! Finance Ticker Symbol
 - Corresponding customizable Benchmark index
