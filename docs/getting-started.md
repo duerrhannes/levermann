@@ -37,9 +37,9 @@ list_styles = ["fivethirtyeight",
 ## Running the Script
 Starting the script presents a GUI prompt to select the input data Excel file. The output files are created in the same directory with a timestamp prefix. 
 Output includes an Excel file with analysis results. It contains a summary sheet, total score, PE ratio, and recommended max stock price. Additional rows use predicted earnings for current year to set a price limit.
-The Excel file has sheets for calculation details of each of the 13 criteria. For criterion overview, refer to the [strategy document](docs/strategy.md).
+The Excel file has sheets for calculation details of each of the 13 criteria. For criterion overview, refer to the [strategy document](./strategy.md).
 
-![sample output file](docs/animation.gif)
+![sample output file](./animation.gif)
 
 Depending on defined Matplotlib styles, sets of result plots in PNG format may be generated. 
 One set includes a summary graphic and 4 other detail plots:
