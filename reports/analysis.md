@@ -7,7 +7,7 @@ N.B: The output plots are automatically generated when running the script using 
 ## Data collection
 
 The dataset comprises financial data of S&P 500 stocks (for the list of companies, see: [Wikipedia](https://en.wikipedia.org/wiki/List_of_S%26P_500_companies)) with closing prices as of August 25, 2023. The data was collected from Yahoo Finance as probably the best-accessible source for free financial markets data. 
-430 stocks out of the S&P 500 have complete data. In total, if stocks with one or more missing data entries are also taken into account, about 99% of all entries was successfully scraped.
+430 stocks out of the S&P 500 have complete data, that's about 85%, so the base is still representable. Out of these 430 remaining stocks, information for 99% of the entries and fields was successfully collected.
 
 
 ## Total scores
@@ -20,11 +20,11 @@ Let's have a look at the distribution of all values, first:
 
 What observations can we make from above displayed histogram?
 1. Most of the stocks seem to oscillate around 0 points (+/-).
-2. Apparently, there is a *slightly* skewed distribution towards positive values.
+2. Apparently, there is a *slightly* skewed distribution towards negative values.
 3. The positive end of the distribution shows a kurtosis (so called "fat tails").
 
 Based on the histogram, it seems reasonable a "buy" signal could be set around +5 or +6 points, and a "sell" threshold at +3.
-
+Why? If you set your score for buying stocks too high, it will probably never be triggered, the opposite goes for values which are set too low. According to the strategy, it is advised to sell or, if applicable, replace stocks when they lose their "momentum" so choosing a value that's about one standard deviation away from the expected value seems fair. Reminder: assuming a normal distribution, this is the boundary for the top ~16% of stocks. So a stock falling below the distance of one standard deviation has left the "top 16% club" and is labeled "sell".
 
 ## Potential candidates
 
@@ -32,7 +32,7 @@ But then, which stocks would be potential buy-candidates?
 Let's rank all stocks by points:
 ![Barchart_complete](./figures/2023-08-28_09-48-57_bar.png)
 
-That's a pretty crowded chart. If we filter only the stocks with +6 or +7 points, that's still 24 stocks left. As a criterion to order the group of the top-scoring stocks, we could take into account how expensive a share is. After all, it's a no-brainer that buying stocks a price too high is one of the most important performance-killers. Ranking the stocks primarily by points achieved and secondarily by the price-earnings ratio (PE ratio), results in this table:
+Obviously, we only want to go for the "top picks". Having a look at the top, 2 stocks both scoring +7 points are left. But then, does it really make a big difference if a stock achieves 6 or 7 points? It probably does not, so we'll filter both the stocks with +6 or +7 points, that's still 15 stocks left (2 with +7 points and 13 with +6 points). As a criterion to order the group of the top-scoring stocks, we could take into account how expensive a share is. After all, it's a no-brainer that buying stocks a price too high is one of the most important performance-killers. Ranking the stocks primarily by points achieved and secondarily by the price-earnings ratio (PE ratio), results in this table:
 ![Top-ranking stocks](./figures/2023-08-28_09-48-57_top-stocks_bar.png)
 
 
@@ -52,7 +52,7 @@ The correlation coefficient between these two metrics is about 0.52, meaning the
 ## Summary tl;dr
 
 Key takeaways are:
-- Data from S&P 500 stocks collected, 430 complete datasets.
+- Data from S&P 500 stocks collected, of which 430 complete datasets (~85%).
 - Reasonable rules for identifying stocks to buy are a score of at least +6 points and an PE of 20 or lower. Sell treshold is set at +3. Of course this can be adjusted to your like.
 - 24 potential high-scoring stocks, ranked by points and PE ratio. Filtered by PE ratio, 8 stocks remain.
 - Top scorers outperformed S&P 500, but correlation is loose (correlation coefficient ~ 0.52).
