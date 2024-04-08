@@ -17,7 +17,7 @@ The data for the financials is fetched from Yahoo Finance, mainly using the pyth
 
 
 Running the notebook generates an Excel-file with a summary of the total scores as well as separate sheets for metrics. The result plots shown here will also be created.
-![Notebook](docs/animation.gif)
+![Notebook](docs/Animation.gif)
 
 
 Disclaimer: this tool is for information purposes only. It is not intended to be used for actual trading or making investment decisions!
